@@ -4,6 +4,9 @@ module.exports = {
       return options.fn(this)
     }
   },
+  {
+    "skipInterpolation": "nuxt/**/*.vue"
+  },
   prompts: {
     name: {
       'type': 'string',
