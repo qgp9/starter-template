@@ -1,4 +1,8 @@
+const path = require('path')
+const siteinfo = require('./.config.js')
+const srcDir = 'nuxt'
 module.exports = {
+  srcDir: srcDir,
   /*
   ** Headers of the page
   */
@@ -10,7 +14,10 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '/css/poole.css' },
+      { rel: 'stylesheet', href: '/css/syntax.css' },
+      { rel: 'stylesheet', href: '/css/hyde.css' }
     ]
   },
   /*
@@ -33,6 +40,26 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      config.resolve.alias.siteinfo = path.join(__dirname, '.site.json')
+    }
+  },
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'PageList',
+        path: '/:collection/list',
+        component: resolve(__dirname, srcDir, 'components/PageList.vue')
+      })
+      routes.push({
+        name: 'BlogList',
+        path: '/blog',
+        component: resolve(__dirname, srcDir, 'components/PageList.vue')
+      })
+      routes.push({
+        name: 'Page',
+        path: '*',
+        component: resolve(__dirname, srcDir, 'components/Page.vue')
+      })
     }
   }
 }

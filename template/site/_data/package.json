@@ -1,15 +1,14 @@
 {
-  "name": "{{ name }}",
+  "name": "qgp9-nuxt",
   "version": "1.0.0",
-  "description": "{{ description }}",
-  "author": "{{ author }}",
+  "description": "Nuxt.js project",
+  "author": "qgp9 <pauljang9@gmail.com>",
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "debug": "^2.6.8",
     "marked": "^0.3.6",
-    "nuxt": "latest",
-    "vuetalisk": "^0.0.6",
-    "vuetalisk-plugin-nuxt-generator": "^0.0.2"
+    "nuxt": "^1.0.0-rc3"
   },
   "scripts": {
     "dev": "nuxt",
@@ -26,6 +25,8 @@
     "eslint-loader": "^1.6.1",
     "eslint-plugin-html": "^2.0.0",
     "eslint-plugin-promise": "^3.4.1",
-    "eslint-plugin-standard": "^2.0.1"
+    "eslint-plugin-standard": "^2.0.1",
+    "express": "^4.15.3",
+    "fs-extra": "^4.0.0"
   }
 }

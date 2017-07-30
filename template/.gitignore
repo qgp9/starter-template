@@ -9,3 +9,12 @@ npm-debug.log
 
 # Nuxt generate
 dist
+
+# Vuetalisk build files
+.site.json
+.config.js
+.store.json
+yarn.lock
+
+# dev
+.dev
