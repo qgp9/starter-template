@@ -1,5 +1,6 @@
 const path = require('path')
 const siteinfo = require('./.config.js')
+const serveStatic = require('serve-static')
 const srcDir = 'nuxt'
 module.exports = {
   srcDir: srcDir,
@@ -43,6 +44,9 @@ module.exports = {
       config.resolve.alias.siteinfo = path.join(__dirname, '.site.json')
     }
   },
+  serverMiddleware: [
+    serveStatic(path.join(siteinfo.root, siteinfo.source_dir, siteinfo.collections.static.path))
+  ],
   router: {
     extendRoutes (routes, resolve) {
       routes.push({

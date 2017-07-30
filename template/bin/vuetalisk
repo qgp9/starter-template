@@ -1,1 +1,3 @@
-../node_modules/vuetalisk/bin/vuetalisk
+#!/usr/bin/env bash
+
+./node_modules/vuetalisk/bin/vuetalisk $@
