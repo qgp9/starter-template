@@ -1,15 +1,15 @@
 # Vuetalisk-Nuxt Starter
 
-A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment.
+A [Vuetalisk](https://github.com/qgp9/Vuetalisk) starter project template for Nuxt
 
-Live demo: https://starter.nuxtjs.org
+Live demo: https://vuetal-nuxt-demo.netlify.com/
 
 ## Installation
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ vue init nuxt-community/starter-template my-project  
+$ vue init qgp9/vuetalisk-nuxt my-project  
 $ cd my-project                     
 # install dependencies
 $ npm install # Or yarn install
@@ -18,6 +18,16 @@ $ npm install # Or yarn install
 > Make sure to use a version of vue-cli >= 2.1 (`vue -V`).
 
 ## Usage
+### Configuration
+`_config.yml`
+
+
+### Pages and Posts
+Under `site` directory
+* `_blog` : blog posts
+* `_data` : data files
+* `_static` : static files
+* Anything alse : pages
 
 ### Development
 
@@ -28,17 +38,9 @@ $ npm run dev
 
 Go to [http://localhost:3000](http://localhost:3000)
 
-### Production
+### Production and generate static site
 
 ``` bash
-# build for production and launch the server
+# build for production 
 $ npm run build
-$ npm start
-```
-
-### Generate
-
-``` bash
-# generate a static project
-$ npm run generate
 ```
