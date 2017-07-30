@@ -1,4 +1,4 @@
-# Starter
+# Vuetalisk-Nuxt Starter
 
 A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment.
 

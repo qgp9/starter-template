@@ -8,15 +8,17 @@
 # install dependencies
 $ npm install # Or yarn install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# check help
+$ ./bin/vuetalisk -h
+$ ./bin/vuetalisk build -h
+$ ./bin/vuetalisk dev -h
+$ ./bin/vuetalisk clean -h
 
-# build for production and launch server
-$ npm run build
-$ npm start
+# serve site watcher and nuxt dev with hot reload at localhost:3000
+$ ./bin/vuetalisk dev -n
 
-# generate static project
-$ npm run generate
+# build for production, with forced nuxt build
+$ ./bin/vuetalisk build -af
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+For detailed explanation on how things work, checkout the [Vuetalisk](https://github.com/qgp9/Vuetalisk).

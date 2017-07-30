@@ -12,10 +12,11 @@
     "vuetalisk-plugin-nuxt-generator": "^0.0.2"
   },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "build:api": "./bin/vuetalisk build",
+    "build:page": "./bin/vuetalisk build -p",
+    "build": "./bin/vuetalisk build -ac",
+    "clean": "./bin/vuetalisk clean",
+    "dev": "./bin/vuetalisk dev -n",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
