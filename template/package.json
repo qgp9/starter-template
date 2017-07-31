@@ -12,11 +12,11 @@
     "vuetalisk-plugin-nuxt-generator": "^0.0.2"
   },
   "scripts": {
-    "dev": "./node_modules/vuetalisk/bin/vuetalisk dev -n",
-    "clean": "./node_modules/vuetalisk/bin/vuetalisk clean",
-    "build": "./node_modules/vuetalisk/bin/vuetalisk build -a",
-    "build:api": "./node_modules/vuetalisk/bin/vuetalisk build",
-    "build:page": "./node_modules/vuetalisk/bin/vuetalisk build -p",
+    "dev": "npx vuetalisk dev -n",
+    "clean": "npx vuetalisk clean",
+    "build": "npx vuetalisk build -a",
+    "build:api": "npx vuetalisk build",
+    "build:page": "npx vuetalisk build -p",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },

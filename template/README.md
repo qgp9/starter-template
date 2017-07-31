@@ -9,16 +9,16 @@
 $ npm install # Or yarn install
 
 # check help
-$ ./bin/vuetalisk -h
-$ ./bin/vuetalisk build -h
-$ ./bin/vuetalisk dev -h
-$ ./bin/vuetalisk clean -h
+$ npx vuetalisk -h
+$ npx vuetalisk build -h
+$ npx vuetalisk dev -h
+$ npx vuetalisk clean -h
 
 # serve site watcher and nuxt dev with hot reload at localhost:3000
-$ ./bin/vuetalisk dev -n
+$ npx vuetalisk dev -n
 
 # build for production, with forced nuxt build
-$ ./bin/vuetalisk build -af
+$ npx vuetalisk build -af
 ```
 
 For detailed explanation on how things work, checkout the [Vuetalisk](https://github.com/qgp9/Vuetalisk).
